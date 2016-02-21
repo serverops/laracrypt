@@ -18,7 +18,7 @@ class Crypt:
         encrypter = AES.new(self.key, mode, IV=iv)
 
         value = base64.b64encode(encrypter.encrypt(self._pad(dumps(text))))
-        mac = self._hash(self.key, base64_iv, value)
+        mac = self._hash(base64_iv, value)
 
         json_encoded = json.dumps({
             'iv': base64_iv,

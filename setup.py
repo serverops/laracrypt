@@ -23,5 +23,7 @@ setup(name='laracrypt',
       license='MIT',
       package_dir={'': 'src'},
       packages=find_packages('src'),
-      install_requires=['pycrypto', 'phpserialize']
+      install_requires=['pycrypto', 'phpserialize'],
+      tests_require=['nose'],
+      test_suite='nose.collector'
 )
