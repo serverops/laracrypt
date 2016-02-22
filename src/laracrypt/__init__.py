@@ -7,7 +7,7 @@ from Crypto.Cipher import AES
 from phpserialize import loads, dumps
 
 
-class Crypt:
+class Crypt(object):
     def __init__(self, key):
         self.key = key
 

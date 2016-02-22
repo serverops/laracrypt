@@ -1,7 +1,7 @@
 from nose.tools import *
 from laracrypt import Crypt
 
-class TestEncryption:
+class TestEncryption(object):
 
     def __init__(self):
         self.key = 'abcdefghijklmnopqrtuvwxyz1234567'
